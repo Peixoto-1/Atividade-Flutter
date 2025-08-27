@@ -1,3 +1,4 @@
+//server
 const express = require('express');
 const PORT =
 3000;
@@ -39,7 +40,7 @@ module.exports = pool;
 
 
 
-cliente 
+//cliente 
 const express = require('express');
 const router =
 express.Router();
@@ -167,7 +168,7 @@ router.get(‘/client/:clientId’, async (req, res) => {
 //POST CREATE ORDER
 
 
-router.post(‘/’), async (req, res) => 
+router.post(‘/’), async (req, res) => {
   const { client_id, order_date, total_amount, status } = red.body;
 
 
@@ -216,4 +217,3 @@ router.delete('/:id', async (req, res) => {
     }
 });
 module.exports = router;
-
